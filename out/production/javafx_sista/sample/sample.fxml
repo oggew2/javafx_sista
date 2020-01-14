@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="638.0" prefWidth="559.0">
+         <children>
+            <Button layoutX="70.0" layoutY="103.0" mnemonicParsing="false" onAction="#AddPerson" text="Lägg till person" />
+            <Button layoutX="388.0" layoutY="104.0" mnemonicParsing="false" onAction="#RemovePerson" text="Ta bort person" />
+            <Button layoutX="232.0" layoutY="103.0" mnemonicParsing="false" onAction="#FindPerson" text="Hitta Person" />
+            <TextField fx:id="PersonNamn" layoutX="60.0" layoutY="48.0" promptText="Namn:" />
+            <TextField fx:id="PersonNummer" layoutX="339.0" layoutY="48.0" promptText="Personnummer:" />
+            <TextField fx:id="KontoNamn" layoutX="62.0" layoutY="206.0" promptText="Kontonamn:" />
+            <Button layoutX="224.0" layoutY="271.0" mnemonicParsing="false" onAction="#AddAccount" text="Lägg till konto" />
+            <TextArea fx:id="KontoPrint" layoutX="179.0" layoutY="376.0" prefHeight="84.0" prefWidth="201.0" />
+            <Button layoutX="227.0" layoutY="486.0" mnemonicParsing="false" onAction="#KontoPrintamannen" text="Skriv ut konton" />
+            <TextField fx:id="PengaRuta" layoutX="327.0" layoutY="206.0" promptText="Summa:" />
+            <Label layoutX="256.0" layoutY="24.0" prefHeight="41.0" prefWidth="82.0" text="Person" />
+            <Label layoutX="260.0" layoutY="187.0" text="Konto" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
